@@ -7,7 +7,7 @@
         public Guid FoodID { get; set; }
         public int Quantity { get; set; }
 
-        public virtual Food Food { get; set; }
+        public ICollection<Food> Food { get; set; }
         public virtual Order Order { get; set; }
     }
 }

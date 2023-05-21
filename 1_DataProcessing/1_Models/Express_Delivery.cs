@@ -13,7 +13,9 @@
         public decimal Shipping_Cost { get; set; }//phí vận chuyển
         public int Payment_Status { get; set; }//trạng thái thanh toán
 
-        public virtual Users Users { get; set; }
-        public virtual Order Order { get; set; }
+        //public virtual Users Users { get; set; }
+        //public Guid IDUser { get; set; }
+        public virtual Bill Bill { get; set; }
+        public Guid IDBill { get; set; }
     }
 }

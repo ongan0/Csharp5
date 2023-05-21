@@ -13,7 +13,7 @@ namespace Assignment_Chsarp5_datntph19899._1_DataProcessing._2_Configurations
             builder.Property(c=>c.Price).IsRequired();
             builder.Property(c=>c.Description).HasMaxLength(256).IsRequired();
 
-            builder.HasMany(c=>c.Food).WithOne(c=>c.Combo).HasForeignKey(c=>c.ID);
+            builder.HasMany(c=>c.Food).WithMany(c=>c.Combos);
         }
     }
 }

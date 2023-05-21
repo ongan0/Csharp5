@@ -10,7 +10,7 @@
         public DateTime Created_At { get; set; }
         public DateTime Updated_At { get; set; }
 
-        public virtual Food Food { get; set; }
-        public virtual Users Users { get; set; }
+        public ICollection <Food> Food { get; set; }
+        public ICollection <Users> Users { get; set; }
     }
 }

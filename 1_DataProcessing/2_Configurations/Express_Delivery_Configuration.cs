@@ -9,6 +9,8 @@ namespace Assignment_Chsarp5_datntph19899._1_DataProcessing._2_Configurations
         public void Configure(EntityTypeBuilder<Express_Delivery> builder)
         {
             builder.HasKey(c => c.ID);
+
+            //builder.HasOne(c => c.Users).WithMany(c => c.Express_Delivery).HasForeignKey(c => c.IDUser);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace Assignment_Chsarp5_datntph19899._1_DataProcessing._3_Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DATNT;Initial Catalog=Assignment_C5_datntph19899;Integrated Security=True");
+            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Assignment_C5_datntph19899;Persist Security Info=True;User ID=Healer;Password=1");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -37,5 +37,6 @@ namespace Assignment_Chsarp5_datntph19899._1_DataProcessing._3_Context
         public DbSet<OrderDetail> OrdelDetail { get; set; }
         public DbSet<Reviews> Reviews { get; set; } 
         public DbSet<Coupons> Coupons { get; set; }
+        public DbSet<Express_Delivery> express_Deliveries { get; set; }
     }
 }

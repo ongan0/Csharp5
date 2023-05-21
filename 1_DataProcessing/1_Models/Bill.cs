@@ -9,5 +9,6 @@
 
         public virtual Users Users { get; set; }
         public ICollection<BillDetail> BillDetails { get; set; }
+        public virtual Express_Delivery Express_Delivery { get; set; }
     }
 }

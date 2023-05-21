@@ -13,6 +13,7 @@ namespace Assignment_Chsarp5_datntph19899._1_DataProcessing._2_Configurations
             builder.Property(c=>c.TotalPrice).IsRequired();
 
             builder.HasMany(c=>c.BillDetails).WithOne(c=>c.Bill).HasForeignKey(c=>c.ID);
+            builder.HasOne(c => c.Express_Delivery).WithOne(c => c.Bill).HasForeignKey<Express_Delivery>(c => c.ID);
         }
     }
 }
